@@ -6,6 +6,6 @@ $conn = mysqli_connect(
   database: "crud"
 );
 
-if (mysqli_error($conn)) {
+if (mysqli_connect_errno()) {
   echo "Connection failed.";
 }
